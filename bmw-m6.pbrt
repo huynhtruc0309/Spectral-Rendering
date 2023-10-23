@@ -3,6 +3,7 @@ Film "rgb"
     "string filename" [ "bmw-m6.png" ]
     "integer yresolution" [ 1000 ]
     "integer xresolution" [ 1400 ]
+# Hi
 LookAt -11 0.8 5
     -2 -0.5 0
     0 1 0
