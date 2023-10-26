@@ -26,7 +26,7 @@ AttributeBegin
   Rotate 80 0 1 0
   Rotate -90 1 0 0
   LightSource "infinite"
-    "string filename" "textures/sunflowers_equiarea.exr"
+    "string filename" "images/ntnu_parking_lot.exr"
 AttributeEnd
 MakeNamedMaterial "CarPaint"
     "string type" [ "coateddiffuse" ]
@@ -786,12 +786,12 @@ AttributeBegin
 AttributeEnd
 # Name "Plane_Plane.001"
 
-AttributeBegin
-    NamedMaterial "floor"
-    Shape "plymesh"
-        "string filename" [ "geometry/mesh_00106.ply" ]
-AttributeEnd
-# Name "BMWSteeringWheel_Torus"
+# AttributeBegin
+#     NamedMaterial "floor"
+#     Shape "plymesh"
+#         "string filename" [ "geometry/mesh_00106.ply" ]
+# AttributeEnd
+# # Name "BMWSteeringWheel_Torus"
 
 AttributeBegin
     NamedMaterial "WindowSeal"
