@@ -2,6 +2,5 @@
 pbrt
 imgtool
 *.exe
-*.png
 images/*.exr
 *.exr

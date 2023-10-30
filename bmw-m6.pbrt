@@ -1,8 +1,8 @@
 Film "rgb"
     "float iso" [ 100 ]
     "string filename" [ "bmw-m6.png" ]
-    "integer yresolution" [ 1000 ]
-    "integer xresolution" [ 1400 ]
+    "integer yresolution" [ 1500 ]
+    "integer xresolution" [ 2000 ]
 # Hi
 LookAt -11 0.8 5
     -2 -0.5 0
@@ -12,7 +12,7 @@ Camera "perspective"
 
 Sampler "halton"
     # "integer pixelsamples" [ 65536 ]
-    "integer pixelsamples" 8
+    "integer pixelsamples" [5]
 
 Integrator "volpath"
     "integer maxdepth" [ 8 ]
@@ -23,8 +23,8 @@ WorldBegin
 # Converted from "tyrant_monkey_bmw249.obj" by obj2pbrt
 # Scene bounds: (-23.973587, -1.432975, -28.291519) - (25.880672, 13.435121, 26.584051)
 AttributeBegin
-  Rotate 80 0 1 0
-  Rotate -90 1 0 0
+   Rotate 10 0 1 0
+   Rotate -90 1 0 0
   LightSource "infinite"
     "string filename" "images/ntnu_parking_lot.exr"
 AttributeEnd
