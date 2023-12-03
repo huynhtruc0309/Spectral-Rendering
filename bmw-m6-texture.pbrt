@@ -1,6 +1,6 @@
 Film "rgb"
     "float iso" [ 100 ]
-    "string filename" [ "bmw-m6-texture-3.png" ]
+    "string filename" [ "bmw-m6-texture-7.png" ]
     "integer yresolution" [ 1500 ]
     "integer xresolution" [ 2000 ]
 # Hi
@@ -12,7 +12,7 @@ Camera "perspective"
 
 Sampler "halton"
     # "integer pixelsamples" [ 65536 ]
-    "integer pixelsamples" [5]
+    "integer pixelsamples" [100]
 
 Integrator "volpath"
     "integer maxdepth" [ 8 ]
@@ -22,19 +22,23 @@ WorldBegin
 
 Texture "float:textures/Dots_Pillow" "float" "imagemap"
     "string filename" [ "textures/Dots_Pillow.png" ]
+  
 Texture "rgb:textures/Dots_Pillow" "spectrum" "imagemap"
     "string filename" [ "textures/Dots_Pillow.png" ]
+
+
     
-# Converted from "tyrant_monkey_bmw249.obj" by obj2pbrt
-# Scene bounds: (-23.973587, -1.432975, -28.291519) - (25.880672, 13.435121, 26.584051)
+    
+
 AttributeBegin
    Rotate 10 0 1 0
    Rotate -90 1 0 0
   LightSource "infinite"
     "string filename" "images/ntnu_parking_lot.exr"
 AttributeEnd
+
 MakeNamedMaterial "Fabric - Pillow - blue"
-    "string normalmap" [ "textures/car_bump.png" ]
+    "string normalmap" [ "textures/Pillow_bump.png" ]
     "rgb reflectance" [ 0.02 .015 .1 ] 
     "float roughness" 1
    "string type" [ "coateddiffuse" ]
@@ -42,7 +46,7 @@ MakeNamedMaterial "Fabric - Pillow - white"
     "rgb reflectance" [ 0.8 0.8 0.8 ]
     "string type" [ "diffuse" ]
 MakeNamedMaterial "CarPaint"
-    "string materials" [ "Fabric - Pillow - blue" "Fabric - Pillow - white" ]
+   "string materials" [ "Fabric - Pillow - blue" "Fabric - Pillow - white" ]
     "texture amount" "float:textures/Dots_Pillow"
     "string type" [ "mix" ]
 MakeNamedMaterial "HeadLight"

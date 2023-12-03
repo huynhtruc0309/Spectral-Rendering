@@ -1,7 +1,7 @@
 #Film "spectral"
 Film "rgb"
     "float iso" [ 100 ]
-    "string filename" [ "darkbackground_25_distantlight.png" ]
+    "string filename" [ "without_darkbackground_25_D65.png" ]
     "integer yresolution" [ 1500 ]
     "integer xresolution" [ 2500 ]
 # Hi
@@ -30,22 +30,26 @@ Integrator "volpath"
 WorldBegin
 
 # Background ................
-AttributeBegin
+#AttributeBegin
   ##Rotate 360 0 1 0
-  Rotate 5 0 1 0
+ # Rotate 5 0 1 0
   #Rotate -90 1 0 0
-   Rotate -90 1 0 0
+  # Rotate -90 1 0 0
   # Translate 0 0 1
 
-  LightSource "infinite"
-    "string filename" "images/dark_image.exr"
+ # LightSource "infinite"
+ #   "string filename" "images/dark_image.exr"
     
-AttributeEnd
+#AttributeEnd
 
+
+
+
+ 
 ########## ILLUMINATION ####################################
 ### distantlight
-LightSource "distant" "point3 from" [ -30 40 100 ]
-"spectrum L""stdillum-A"
+LightSource "distant" "point3 from" [ -100 150 100 ]
+"spectrum L""stdillum-D65"
 
 ### spotlight
 # LightSource "spot" "spectrum I" "stdillum-D50"
