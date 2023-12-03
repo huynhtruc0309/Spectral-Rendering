@@ -12,7 +12,7 @@ Camera "perspective"
 
 Sampler "halton"
     # "integer pixelsamples" [ 65536 ]
-    "integer pixelsamples" [128]
+    "integer pixelsamples" [5]
 
 Integrator "volpath"
     "integer maxdepth" [ 8 ]
@@ -34,7 +34,7 @@ AttributeBegin
     "string filename" "images/ntnu_parking_lot.exr"
 AttributeEnd
 MakeNamedMaterial "Fabric - Pillow - blue"
-    "string normalmap" [ "textures/Pillow_bump.png" ]
+    "string normalmap" [ "textures/car_bump.png" ]
     "rgb reflectance" [ 0.02 .015 .1 ] 
     "float roughness" 1
    "string type" [ "coateddiffuse" ]
