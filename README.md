@@ -6,9 +6,17 @@
 This project demonstrates physically-based spectral rendering using **spectral reflectance**, **spectral power distributions (SPDs)**, and **camera spectral sensitivity models**. The goal is to explore how varying illumination conditions impact the appearance of materials and the accuracy of color reproduction.
 
 <p align="center">
-  <img src="images/bmw-m6.png" alt="Rendered BMW M6" width="60%">
+  <img src="images/poster.png" alt="Top Image" width="60%">
 </p>
 
+<p align="center">
+  <img src="images/poster1.png" alt="Left Image" width="45%">
+  <img src="images/poster2.png" alt="Right Image" width="45%">
+</p>
+
+<p align="center">
+  <img src="images/poster3.png" alt="Rendered BMW M6" width="100%">
+</p>
 ---
 
 ## 🔬 Project Highlights
@@ -69,11 +77,10 @@ Spectral-Rendering/
 
 ## 📊 Sample Results
 
-| Illuminant      | Material: Gold Coating      |
+| Illuminant      | Material: Mirror Coating    |
 |-----------------|-----------------------------|
-| D65             | ![D65](images/bmw-m6.png)   |
-| Tungsten        | *(example render here)*     |
-| Fluorescent     | *(example render here)*     |
+| D65             | ![D65](images/l1.png)       |
+| D50             | ![D65](images/l2.png)       |
 
 ---
 
